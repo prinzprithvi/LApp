@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_type">com.sf.loanapp.login</string>
+    <string name="app_name"><b>LoanApp</b></string>
+    <string name="app_package">com.sf.loanapp</string>
+    <string name="welcome">Welcome %s</string>
+    <string name="logout_button">Logout</string>
+    <string name="fetch_contacts_button">Fetch Contacts</string>
+    <string name="fetch_accounts_button">Fetch Accounts</string>
+    <string name="clear_button">Clear</string>
+    <string name="action_search">Search</string>
+    <string name="action_refresh">Synchronize</string>
+    <string name="action_add">Add</string>
+    <string name="splash_screen">DYNAMIC SYNC!</string>
+    <string name="switch_user_button">Switch User</string>
+    <string name="inspect_db_button">Inspect DB</string>
+    <string name="logout_title">Log out?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">No</string>
+    <string name="continu">Continue</string>
+    <string name="product">Product</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="new_">New</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_new_app_nav">NewAppNavActivity</string>
+
+</resources>

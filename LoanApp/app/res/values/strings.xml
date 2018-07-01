@@ -23,5 +23,7 @@
     <string name="new_">New</string>
     <string name="profile">Profile</string>
     <string name="title_activity_new_app_nav">NewAppNavActivity</string>
-
+    <string name="app_agreement">I, here by agree and allow VOLVO Financial Serices to use my Aadhar details
+        for my Loan Application</string>
+    <string name="address">1st floor # DRC Post Tavarekere Main Road, Kaveri Layout Bengaluru 411030 Karnataka India</string>
 </resources>

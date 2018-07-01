@@ -19,23 +19,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.sf.loanapp.springindicator.viewpager.ScrollerViewPager
-            android:id="@+id/view_pager"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center" />
+            android:orientation="vertical">
 
-        <com.sf.loanapp.springindicator.SpringIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:siTextSize="18sp"
-            app:siIndicatorColors="@array/indicator_colors"
-            app:siTextColor="@color/colorPrimaryDark"
-            app:siSelectedTextColor="@android:color/white"
-            app:siIndicatorColor="@color/colorPrimary"
-            android:id="@+id/indicator"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp" />
+            <com.sf.loanapp.springindicator.SpringIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:siTextSize="14sp"
+                app:siIndicatorColors="@array/indicator_colors"
+                app:siTextColor="@color/colorPrimaryDark"
+                app:siSelectedTextColor="@android:color/white"
+                app:siIndicatorColor="@color/colorPrimary"
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.sf.loanapp.springindicator.viewpager.ScrollerViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
     </FrameLayout>
 
 </LinearLayout>

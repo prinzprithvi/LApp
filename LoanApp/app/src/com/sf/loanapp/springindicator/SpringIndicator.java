@@ -183,7 +183,7 @@ public class SpringIndicator extends FrameLayout {
 
 
     private void setUpListener(){
-        viewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+        viewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
 
             @Override
             public void onPageSelected(int position) {

@@ -106,13 +106,13 @@ public class MainActivity extends SalesforceActivity {
 			switch (item.getItemId()) {
 
 				case R.id.continu:
-                    launchNewAppActivity();
 					return true;
 				case R.id.product:
 					return true;
 				case R.id.dashboard:
 					return true;
 				case R.id.new_:
+					launchNewAppActivity();
 					return true;
 				case R.id.profile:
 					return true;
@@ -129,7 +129,7 @@ public class MainActivity extends SalesforceActivity {
 	 * @param v
 	 */
 	public void onClearClick(View v) {
-		//listAdapter.clear();
+		//dashAdapter.clear();
 	}	
 
 	/**

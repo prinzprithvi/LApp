@@ -1,17 +1,15 @@
 package com.sf.loanapp.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.sf.loanapp.R;
-import com.sf.loanapp.springindicator.GuideFragment;
+import com.sf.loanapp.fragments.ApplicantDetailsFragment;
+import com.sf.loanapp.fragments.ApplicationDetailsFragment;
+import com.sf.loanapp.fragments.VerificationFragment;
 import com.sf.loanapp.springindicator.ModelPagerAdapter;
 import com.sf.loanapp.springindicator.PagerModelManager;
 import com.sf.loanapp.springindicator.SpringIndicator;
@@ -36,7 +34,11 @@ public class NewAppNavActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         PagerModelManager manager = new PagerModelManager();
-        manager.addCommonFragment(GuideFragment.class, getBgRes(), getTitles());
+        //manager.addCommonFragment(GuideFragment.class, getBgRes(), getTitles());
+        manager.addFragment(new ApplicationDetailsFragment(),"1");
+        manager.addFragment(new VerificationFragment(),"2");
+        manager.addFragment(new ApplicantDetailsFragment(),"3");
+        manager.addFragment(new ApplicationDetailsFragment(),"4");
         ModelPagerAdapter adapter = new ModelPagerAdapter(getSupportFragmentManager(), manager);
         viewPager.setAdapter(adapter);
         viewPager.fixScrollSpeed();

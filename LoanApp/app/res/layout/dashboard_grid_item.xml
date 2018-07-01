@@ -10,15 +10,19 @@
         android:orientation="vertical"
         android:gravity="center"
         android:background="@drawable/grid_view_bg"
+        android:padding="10dp"
         >
 
         <TextView
+            android:id="@+id/acc_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Infosys"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
             />
 
         <TextView
@@ -26,19 +30,25 @@
             android:layout_height="wrap_content"
             android:text="2018-02-28"
             android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="login"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="bcm092222421knlz"
             android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
             />
 
         <TextView
@@ -46,7 +56,10 @@
             android:layout_height="wrap_content"
             android:text="NEW - ENTERED"
             android:textSize="20sp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:maxLines="1"
+            android:ellipsize="end"/>
 
     </LinearLayout>
 </LinearLayout>

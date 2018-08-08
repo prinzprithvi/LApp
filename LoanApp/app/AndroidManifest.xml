@@ -5,6 +5,8 @@
     android:versionCode="1"
     android:versionName="1.0">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="27" />
@@ -27,13 +29,15 @@
         android:name=".MainApplication"
         android:icon="@drawable/sf__icon"
         android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         android:manageSpaceActivity="com.salesforce.androidsdk.ui.ManageSpaceActivity">
 
         <!-- Launcher screen -->
         <activity
             android:name=".main.screen.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/MyCustom.ActionBarTheme">
+            android:theme="@style/MyCustom.ActionBarTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -106,7 +110,18 @@
         <activity
             android:name=".activities.NewAppNavActivity"
             android:label="@string/title_activity_new_app_nav"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activities.QRReaderActivity"
+            android:label="@string/title_activity_new_app_nav"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activities.DecoderActivity"
+            android:label="@string/title_activity_new_app_nav"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ dependencies {
     compile 'com.android.support:design:27.1.1'
     compile 'com.android.support:appcompat-v7:27.1.1'
     //compile 'com.github.chenupt.android:springindicator:1.0.2@aar'
+    compile 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
 }
 
 android {
